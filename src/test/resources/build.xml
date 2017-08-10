@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="ConfigWebApplicationTest" default="config" basedir=".">
+
+	<!-- ===================================================================== -->
+	<!-- define global properties -->
+	<!-- ===================================================================== -->
+	<!-- Pasar por parametro al ant -->
+	<property name="remoteWebHost" value="http://10.40.61.19:4444/wd/hub" />
+	<property name="remoteDir" value="//pc-dlagod/Descargas" />
+	<property name="baseUrl" value="http://weblogic2.px.sacyl.es:8508/" />
+	<property name="enviroment" value="desa" />
+
+	<!-- ===================================================================== -->
+	<!-- define local properties -->
+	<!-- ===================================================================== -->
+	<property name="file" value="config/config.properties" />
+	<property name="jsonDir" value="json" />
+	<property name="inputDir" value="${jsonDir}/${enviroment}/usersData.json"/>
+	<property name="outputDir" value="${jsonDir}/users.json"/>
+
+	<!-- ======================= TAREAS =================================== -->
+
+	<!-- Se configura correctamente el fichero de configuración de la aplicación de PselTest -->
+	<target name="config">
+
+		<echo message="file: ${file}" />
+		<echo message="remoteWebHost: ${remoteWebHost}" />
+		<echo message="remoteDir: ${remoteDir}" />
+		<echo message="baseUrl: ${baseUrl}" />
+
+		<propertyfile file="${file}">
+			<entry key="remoteWebHost" operation="=" value="@remoteWebHost" />
+			<entry key="remoteDir" operation="=" value="@remoteDir" />
+			<entry key="baseUrl" operation="=" value="@baseUrl" />
+		</propertyfile>
+
+		<replace file="${file}" token="@remoteWebHost" value="${remoteWebHost}" />
+		<replace file="${file}" token="@remoteDir" value="${remoteDir}" />
+		<replace file="${file}" token="@baseUrl" value="${baseUrl}" />
+		
+		<echo message="Create file: users.json" />
+		<copy file="${inputDir}" tofile="${outputDir}" overwrite="true"/>
+	</target>
+
+</project>

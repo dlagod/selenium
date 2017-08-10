@@ -1,0 +1,179 @@
+[{
+	"Libre-Discapacidad": [{
+		"userName": "E23 - Enfermero/a/ - Libre-Discapacidad",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "02/03/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 25.65,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de León y El Bierzo"
+	}, {
+		"userName": "103 - Celadores - Libre-Discapacidad",
+		"initDate": "01/02/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "02/03/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 25.65,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Gerencia de Salud de Área de Salamanca"
+	}, {
+		"userName": "P31 - CARDIOLOGÍA - Libre-Discapacidad",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "01/02/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 30.52,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de Valladolid y Palencia"
+	}, {
+		"userName": "M02 - MEDICINA INTERNA - Libre-Discapacidad",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "20/04/2017 00:00:00",
+		"minAgeDate": "01/12/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 26.74,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de Valladolid y Palencia"
+	}]
+}, {
+	"Promoción interna-Discapacidad": [{
+		"userName": "E23 - Enfermero/a/ - Promoción interna-Discapacidad",
+		"initDate": "01/03/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "02/03/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 25.65,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de León y El Bierzo"
+	}, {
+		"userName": "103 - Celadores - Promoción interna-Discapacidad",
+		"initDate": "01/01/2016  00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "02/03/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 25.65,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A",
+		"receiver": "Gerencia de Salud de Área de Salamanca"
+	}, {
+		"userName": "P33 - CARDIOLOGÍA - Promoción interna-Discapacidad",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "01/02/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 30.52,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de Valladolid y Palencia"
+	}, {
+		"userName": "M04 - MEDICINA INTERNA - Promoción interna-Discapacidad",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "20/04/2017 00:00:00",
+		"minAgeDate": "01/12/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 26.74,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de Valladolid y Palencia"
+	}]
+}, {
+	"Promoción interna-Ordinario": [{
+		"userName": "E22 - Enfermero/a/ - Promoción interna-Ordinario",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "02/03/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 25.65,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de León y El Bierzo"
+	}, {
+		"userName": "102 - Celadores - Promoción interna-Ordinario",
+		"initDate": "01/02/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "02/03/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 25.65,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Gerencia de Salud de Área de Salamanca"
+	}, {
+		"userName": "P32 - CARDIOLOGÍA - Promoción interna-Ordinario",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "01/02/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 30.52,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de Valladolid y Palencia"
+	}, {
+		"userName": "M03 - MEDICINA INTERNA - Promoción interna-Ordinario",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "20/04/2017 00:00:00",
+		"minAgeDate": "01/12/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 26.74,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de Valladolid y Palencia"
+	}]
+}, {
+	"Libre-Ordinario": [{
+		"userName": "E21 - Enfermero/a/ - Libre-Ordinario",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "02/03/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 25.65,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de León y El Bierzo"
+	}, {
+		"userName": "101 - Celadores - Libre-Ordinario",
+		"initDate": "01/02/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "02/03/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 25.65,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Gerencia de Salud de Área de Salamanca"
+	}, {
+		"userName": "P30 - CARDIOLOGÍA - Libre-Ordinario",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "01/05/2017 00:00:00",
+		"minAgeDate": "01/02/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 30.52,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de Valladolid y Palencia"
+	}, {
+		"userName": "M01 - MEDICINA INTERNA - Libre-Ordinario",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "20/04/2017 00:00:00",
+		"minAgeDate": "01/12/2016 00:00:00",
+		"minAge": 16,
+		"callPrice": 26.74,
+		"bankAccount": "ES39 2104 0060 37 9125714947",
+		"bank": "Banco de Caja España de Inversiones, Salamanca y Soria, S.A.",
+		"receiver": "Sr. Gerente de la Gerencia de Salud de las Áreas de Valladolid y Palencia"
+	}, {
+		"userName": "mi codigo - Enfermero/a/ - Libre-Ordinario",
+		"initDate": "01/01/2016 00:00:00",
+		"endDate": "20/04/2017 00:00:00",
+		"minAgeDate": null,
+		"minAge": null,
+		"callPrice": null,
+		"bankAccount": null,
+		"bank": null,
+		"receiver": "GERENCIA DE ATENCIÓN PRIMARIA DE VALLADOLID-OESTE\nPaseo de Filipinos s/n, planta 3ª 47007 - VALLADOLID\n"
+	}]
+}]

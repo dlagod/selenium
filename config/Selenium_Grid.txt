@@ -1,0 +1,22 @@
+
+/* (HUB) Default Port 4444 */ 
+java -jar selenium-server-standalone-2.53.1.jar -role hub
+java -jar selenium-server-standalone-2.53.1.jar -role hub -hubConfig hubConfig.json
+
+
+#####################################################################################################
+#IE (32bits) Node Setup
+java -Dwebdriver.ie.driver=D:/Programas/selenium-server/IEDriverServer_Win32_2.53.1/IEDriverServer.exe -jar selenium-server-standalone-2.53.1.jar -port 5555 -role node -hub http://localhost:4444/grid/register -browser "browserName=internet explorer, version=11, platform=WINDOWS, maxInstances=1"
+
+#FireFox Node Setup
+java -jar selenium-server-standalone-2.53.1.jar -port 5557 -role node -hub http://localhost:4444/grid/register -browser "browserName=firefox, version=42.0, platform=WINDOWS, maxInstances=1, seleniumProtocol=WebDriver"
+
+#Chrome Node Setup
+java -Dwebdriver.chrome.driver=D:/Programas/selenium-server/chrome/2.25/chromedriver.exe -jar selenium-server-standalone-2.53.1.jar -port 5556 -role node -hub http://localhost:4444/grid/register -browser "browserName=chrome, version=54.0.2840.99, platform=WINDOWS,  maxInstances=1, seleniumProtocol=WebDriver"
+java -Dwebdriver.chrome.driver=D:/Programas/selenium-server/chrome/2.29/chromedriver.exe -jar selenium-server-standalone-2.53.1.jar -port 5556 -role node -hub http://localhost:4444/grid/register -browser "browserName=chrome, version=57.0.2987.133, platform=WINDOWS,  maxInstances=1, seleniumProtocol=WebDriver"
+
+#####################################################################################################
+
+CONSOLA Selenenium
+http://localhost:4444/grid/console
+#####################################################################################################

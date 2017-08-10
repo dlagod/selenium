@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LibreOrdSuite" parallel="tests" thread-count="2" verbose="2">
+	
+	<test name="LibreOrdTypeAccess Firefox">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="42.0" />
+		<groups>
+		    <run>
+		      <include name="grupo.libre.ord.ok"/>
+		    </run>
+  		</groups>
+		<classes>
+			<class name="es.ofca.test.psel.functional.accesstype.LibreOrdAccessType" />
+		</classes>
+	</test>
+	
+	<test name="LibreOrdTypeAccess Chrome">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="54.0.2840.99" />
+		<groups>
+		    <run>
+		      <include name="grupo.libre.ord.ok"/>
+		    </run>
+  		</groups>
+		<classes>
+			<class name="es.ofca.test.psel.functional.accesstype.LibreOrdAccessType" />
+		</classes>
+	</test>
+
+<!-- 	
+	<test name="LibreOrdTypeAccess IE">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="internet explorer" />
+		<parameter name="version" value="11" />
+		<groups>
+		    <run>
+		      <include name="grupo.libre.ord.ok"/>
+		    </run>
+  		</groups>
+		<classes>
+			<class name="es.ofca.test.psel.functional.accesstype.LibreOrdAccessType" />
+		</classes>
+	</test>
+-->
+
+</suite> <!-- ControllerSuite -->

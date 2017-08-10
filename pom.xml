@@ -1,0 +1,207 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>es.ofca.test</groupId>
+	<artifactId>PselTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>PselTest</name>
+	<description>Proyecto realizado por OFCA para las pruebas funcionales del proyecto Psel</description>
+
+	<properties>
+
+		<remoteWebHost>http://localhost:4444/wd/hub</remoteWebHost>
+		<remoteDir>C:/Users/dlago/Downloads</remoteDir>
+		<baseUrl>http://weblogic2.px.sacyl.es:8508/</baseUrl>
+		<enviroment>desa</enviroment>
+
+		<java.version>1.7</java.version>	
+		<log4j.version>1.2.17</log4j.version>
+		<selenium.version>2.53.1</selenium.version><!-- Selenium 2.53.1 Compatible con Mozilla Firefox 42.0 -->
+		<testng.version>6.9.9</testng.version>
+		<gson.version>2.5</gson.version>
+		<pdfbox.version>1.8.11</pdfbox.version>
+		<zxing.version>3.3.0</zxing.version>
+		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
+		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+		<maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+		<maven-jar-plugin.version>2.6</maven-jar-plugin.version>
+	</properties>
+
+	<dependencies>
+		<!-- Logger -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<!-- Json -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+		</dependency>
+
+		<!-- TestNG -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Selenium -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Lectura de PDF -->
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>${pdfbox.version}</version>
+		</dependency>
+
+		<!-- Lectura del código de barras -->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>${zxing.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+			<version>${zxing.version}</version>
+		</dependency>  
+
+	</dependencies>
+
+
+	<build>
+		<!-- <sourceDirectory>src/main/java</sourceDirectory> -->
+		<plugins>			
+			<!-- Conmpilación del Proyecto -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			
+			<!-- Configuración para invocar a la tarea ant -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>${maven-antrun-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>test-config</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<ant antfile="src/test/resources/build.xml" useNativeBasedir="true">
+									<property name="remoteWebHost" value="${remoteWebHost}" />
+									<property name="remoteDir" value="${remoteDir}" />
+									<property name="baseUrl" value="${baseUrl}" />
+									<property name="enviroment" value="${enviroment}" />
+								</ant>
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<!-- Configuración del TestNG -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven-surefire-plugin.version}</version>
+				<configuration>
+				 
+					<systemPropertyVariables>
+            			<testResourcesDirectory>${project.build.testOutputDirectory}</testResourcesDirectory>
+          			</systemPropertyVariables>
+       			
+					<suiteXmlFiles>
+						<suiteXmlFile>${project.build.testOutputDirectory}/testng/allTestNG.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			
+			<!-- Generación del Jar de Test -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${maven-jar-plugin.version}</version>
+				<configuration>
+					<skipIfEmpty>true</skipIfEmpty>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.apache.maven.plugins
+										</groupId>
+										<artifactId>
+											maven-antrun-plugin
+										</artifactId>
+										<versionRange>
+											[${maven-antrun-plugin.version},)
+										</versionRange>
+										<goals>
+											<goal>run</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<execute/>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+	<!-- Distribución de Artefactos -->
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>libs-release-psel</name>
+			<url>http://xamp.sacyl.es/artifactory/libs-psel</url>
+		</repository>
+		<snapshotRepository>
+			<id>central</id>
+			<name>libs-snapshot-psel</name>
+			<url>http://xamp.sacyl.es/artifactory/libs-psel</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

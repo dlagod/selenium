@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CheckDuplicateCallSuite" parallel="false">
+	
+	<test name="CheckDuplicateCall">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="internet explorer" />
+		<parameter name="version" value="11" />
+		<groups>
+		    <run>
+		      <include name="psel.duplicate.call"/>
+		    </run>
+  		</groups>
+		<classes>
+			<class name="es.ofca.test.psel.functional.duplicatecall.CheckDuplicateCall" />
+		</classes>
+	</test> <!-- Controller -->
+</suite> <!-- ControllerSuite -->

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="InternalOrdSuite" parallel="tests" thread-count="1" verbose="2">
+
+<!-- 
+
+	<test name="InternalOrdTypeAccess Firefox">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="42.0" />
+		<groups>
+			<run>
+				<include name="grupo.internal.ord.ok" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="es.ofca.test.psel.functional.accesstype.InternalOrdAccessType" />
+		</classes>
+	</test>
+
+
+	<test name="InternalOrdTypeAccess Chrome">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="57.0.2987.133" />
+		<groups>
+			<run>
+				<include name="grupo.internal.ord.ok" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="es.ofca.test.psel.functional.accesstype.InternalOrdAccessType" />
+		</classes>
+	</test>
+-->
+ 
+	<test name="InternalOrdTypeAccess IE">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="internet explorer" />
+		<parameter name="version" value="11" />
+		<groups>
+			<run>
+				<include name="grupo.internal.ord.ok" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="es.ofca.test.psel.functional.accesstype.InternalOrdAccessType" />
+		</classes>
+	</test>
+
+</suite> <!-- ControllerSuite -->

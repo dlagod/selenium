@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllSuite" parallel="tests" thread-count="1" verbose="2">
+	<!-- 
+	<test name="all Firefox">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="42.0" />
+		<groups>
+		    <run>
+		      <include name="psel.active.call"/>
+		      <include name="grupo.libre.ord.ok"/>
+		      <include name="grupo.libre.disc.ok"/>
+		      <include name="grupo.internal.ord.ok"/>
+		      <include name="grupo.internal.disc.ok"/>
+		      <include name="psel.duplicate.call"/>
+		      <include name="psel.payment.call"/>
+		    </run>
+  		</groups>
+		<classes>
+			<class name="es.ofca.test.psel.functional.activecall.CheckActiveCall" />
+			<class name="es.ofca.test.psel.functional.accesstype.LibreOrdAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.LibreDiscAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.InternalOrdAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.InternalDiscAccessType" />
+			<class name="es.ofca.test.psel.functional.duplicatecall.CheckDuplicateCall" />
+			<class name="es.ofca.test.psel.functional.paymentcall.CheckPaymentCall" />
+		</classes>
+	</test> 
+	
+	<test name="all Chrome">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="54.0.2840.99" />
+		<groups>
+		    <run>
+		      <include name="psel.active.call"/>
+		      <include name="grupo.libre.ord.ok"/>
+		      <include name="grupo.libre.disc.ok"/>
+		      <include name="grupo.internal.ord.ok"/>
+		      <include name="grupo.internal.disc.ok"/>
+		      <include name="psel.duplicate.call"/>
+		      <include name="psel.payment.call"/>
+		    </run>
+  		</groups>
+		<classes>
+			<class name="es.ofca.test.psel.functional.activecall.CheckActiveCall" />
+			<class name="es.ofca.test.psel.functional.accesstype.LibreOrdAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.LibreDiscAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.InternalOrdAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.InternalDiscAccessType" />
+			<class name="es.ofca.test.psel.functional.duplicatecall.CheckDuplicateCall" />
+			<class name="es.ofca.test.psel.functional.paymentcall.CheckPaymentCall" />
+		</classes>
+	</test> 
+	-->
+	
+
+	<test name="all IE">
+		<parameter name="platform" value="Windows" />
+		<parameter name="browser" value="internet explorer" />
+		<parameter name="version" value="11" />
+		<groups>
+		    <run>
+		      <include name="psel.active.call"/>
+		      <include name="grupo.libre.ord.ok"/>
+		      <include name="grupo.libre.disc.ok"/>
+		      <include name="grupo.internal.ord.ok"/>
+		      <include name="grupo.internal.disc.ok"/>
+		      <include name="psel.duplicate.call"/>
+		      <include name="psel.payment.call"/>
+		    </run>
+  		</groups>
+		<classes>
+			<class name="es.ofca.test.psel.functional.activecall.CheckActiveCall" />
+			<class name="es.ofca.test.psel.functional.accesstype.LibreOrdAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.LibreDiscAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.InternalOrdAccessType" />
+			<class name="es.ofca.test.psel.functional.accesstype.InternalDiscAccessType" />
+			<class name="es.ofca.test.psel.functional.duplicatecall.CheckDuplicateCall" />
+			<class name="es.ofca.test.psel.functional.paymentcall.CheckPaymentCall" />
+		</classes>
+	</test> 
+
+</suite> <!-- ControllerSuite -->
