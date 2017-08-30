@@ -20,3 +20,5 @@ java -Dwebdriver.chrome.driver=D:/Programas/selenium-server/chrome/2.29/chromedr
 CONSOLA Selenenium
 http://localhost:4444/grid/console
 #####################################################################################################
+
+(Firefox 42.0) -> Extensions -> Selenium IDE 2.9.1.1-signed
