@@ -1,0 +1,30 @@
+Maven Builds:
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+*************************
+*  PselTest_DLAGOD      *
+*************************
+Base directory: ${workspace_loc:/PselTest}
+Goals: -U clean package -DremoteWebHost="http://pc-dlagod:4444/wd/hub"  -DremoteDir="Descargas" -DbaseUrl=http://weblogic2.px.sacyl.es:8508/
+Maven: EMBEDDED (3.3.3)	
+JDK: 1.7.0_51
+
+*************************
+*    PselTest_JLUIS     *
+*************************
+Base directory: ${workspace_loc:/PselTest}
+Goals: -U clean package -DremoteWebHost="http://10.40.61.15:4444/wd/hub" -DremoteDir="//10.40.61.15/Descargas" -DbaseUrl=http://weblogic2.px.sacyl.es:8508/
+Maven: EMBEDDED (3.3.3)	
+JDK: 1.7.0_51
+
+
+
+TestNG:
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*******************************************
+*    internalDiscTypeAccessTestNG.xml     *
+*******************************************
+Project: PselTest
+Suite: src/test/resources/testng/typeaccess/internalDiscTypeAccessTestNG.xml
+VM Argument: -DtestResourcesDirectory=D:/Programas/Eclipse/eclipse-jee-mars-R/workspace/PselTest/src/test/resources
+JDK: 1.7.0_51
